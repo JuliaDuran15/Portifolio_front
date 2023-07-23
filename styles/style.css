@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@200;400;600&family=Roboto:wght@300&display=swap');
+
+:root {
+    --cor-primaria:#7A4495;
+    --cor-secundaria:#FCE2DB;
+    --cor-terciaria:#FF8FB1;
+    --cor-hover:#B270A2;
+
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-paragrafo:  'Montserrat', sans-serif;
+}
+
+*{   margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+
+.header{
+    padding: 2% 0 0 15%;
+}
+.header_menu{
+    display: flex;
+    gap: 80px;
+}
+.header_menu_link{
+    font-family:  var(--fonte-paragrafo);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    font-size: 24px;
+}
+.presentacion{
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentacion_content{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentacion_content_title{
+    font-family: var(--fonte-principal);
+    font-size: 36px;
+}
+
+.title-destaque{
+    color: var(--cor-terciaria);
+}
+
+.presentacion_content_text{
+    font-size: 24px;
+    font-family: var(--fonte-paragrafo);
+}
+
+.presentacion_links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    align-items: center;
+    gap: 32px;
+}
+
+.presentacion_links_subt{
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.presentacion_links_style{
+    /* background-color: #990099; */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 21.5px 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-paragrafo);
+    font-weight: 600;
+    border-radius: 8px;
+    border: 2px solid var(--cor-terciaria);
+}
+
+.presentacion_links_style:hover{
+    background-color: var(--cor-hover);
+}
+
+.rodape{
+    text-align: center;
+    font-family: var(--fonte-paragrafo);
+    background-color: var(--cor-terciaria);
+    padding: 22px;
+}
+
+.presentacion_about{ 
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;}
+
+
+
+.presentacion_about_content_subtext{
+    font-size: 16px;
+    font-family: var(--fonte-paragrafo);
+    padding: 6px 0 20px 0;
+} 
+
