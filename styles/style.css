@@ -31,17 +31,22 @@ body{
     font-weight: 600;
     color: var(--cor-terciaria);
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
+.presentacion_image{
+    width: 45%;
+}
+
 .presentacion{
-    padding: 8% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .presentacion_content{
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -49,7 +54,7 @@ body{
 
 .presentacion_content_title{
     font-family: var(--fonte-principal);
-    font-size: 36px;
+    font-size: 2rem;
 }
 
 .title-destaque{
@@ -57,7 +62,7 @@ body{
 }
 
 .presentacion_content_text{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-family: var(--fonte-paragrafo);
 }
 
@@ -72,7 +77,7 @@ body{
 .presentacion_links_subt{
     font-family: var(--fonte-principal);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .presentacion_links_style{
@@ -80,11 +85,11 @@ body{
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 378px;
+    width: 50%;
     border-radius: 8px;
     text-align: center;
     padding: 21.5px 0;
-    font-size: 24px;
+    font-size: 1.5rem;
     text-decoration: none;
     color: var(--cor-secundaria);
     font-family: var(--fonte-paragrafo);
@@ -113,8 +118,27 @@ body{
 
 
 .presentacion_about_content_subtext{
-    font-size: 16px;
+    font-size: 1rem;
     font-family: var(--fonte-paragrafo);
     padding: 6px 0 20px 0;
 } 
 
+@media (max-width: 1200px){
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu{
+        display: flex;
+        justify-content: center;
+    }
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentacion_content{
+        width: auto;
+    }
+
+
+}
