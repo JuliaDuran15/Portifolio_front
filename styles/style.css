@@ -106,7 +106,7 @@ body{
     text-align: center;
     font-family: var(--fonte-paragrafo);
     background-color: var(--cor-terciaria);
-    padding: 22px;
+    padding: 2% 0 0 15%;;
 }
 
 .presentacion_about{ 
