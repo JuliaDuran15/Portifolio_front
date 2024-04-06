@@ -1,14 +1,357 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/media.css">
+    
 </head>
-<body>
-    <header class="header">
+<body id="body">
+    <nav id='desktop-nav'>
+        <div class="logo">Julia Duran</div>
+        <div>
+            <ul class='nav-links'>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="color-mode">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Dark Mode</label>
+                      </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="ham-nav">
+        <div class="logo">Julia Duran</div>
+        <div class="ham-menu">
+            <div class="ham-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">Sobre</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experiência</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+                <li>
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" role="switch" id="color-mode">
+                        <label class="form-check-label" for="flexSwitchCheckChecked">Dark Mode</label>
+                      </div>
+                </li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/boneco.png" alt="Foto da Julia Duran" >
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Olá meu nome é</p>
+            <h1 class="title">Julia Duran</h1>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                onclick="window.open('./assets/curriculo.pdf')"
+                >
+            Curriculo
+            </button>
+            </div>
+            <div id="socials-container">
+                <img
+                src="./assets/linkedin.png"
+                alt="Meu Linkedin"
+                class="icon"
+                onclick="location.href='https://www.linkedin.com/in/julia-machado-duran-791317253/'"
+            />
+            <img
+                src="./assets/github.png"
+                alt="Meu Github"
+                class="icon"
+                onclick="location.href='https://github.com/JuliaDuran15'"
+            />
+            <img
+                src="./assets/instagram.png"
+                alt="Meu Instagrem"
+                class="icon"
+                onclick="location.href='https://www.instagram.com/juuhduran/'"
+            />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Saiba mais </p>
+        <h1 class="title">Sobre Mim</h1>
+        <div class="section-container">
+        
+          <div class="about-details-container">
+            <div class="about-containers">
+              <!--<div class="details-container">
+                <img
+                  src="./assets/experience.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <h3>Experience</h3>
+                <p>2+ years <br />Frontend Development</p>
+              </div>-->
+              <div class="details-container">
+                <img
+                  src="./assets/education.png"
+                  alt="Education icon"
+                  class="icon"
+                />
+                <h3>Educação</h3>
+                
+                <p>Engenharia da Computação (PUC-Campinas)<br />Sexto periodo</p>
+                <br />
+                <p>Cultura Inglesa / Curso de Inglês</p>
+                
+            </div>
+            </div>
+            <div class="text-container">
+              <p>
+                Olá! Meu nome é Julia Duran! Atualmente, estou imersa no estudo de diversas áreas, incluindo Electron.js, Java e bancos de dados.
+            Minha jornada no mundo da programação começou com experiências anteriores em Assembly 16x, C, JavaScript e PHP/Laravel, o que me proporcionou uma base sólida e uma compreensão abrangente dos princípios fundamentais da computação.
+        <br  />
+        <br  />
+        Estou constantemente buscando novas oportunidades para expandir meu conhecimento e aplicá-lo em projetos práticos e desafiadores.Além da programação, tenho interesse em áreas como inteligência artificial, desenvolvimento web e segurança da informação.       
+        </p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#experience'"
+        />
+      </section>
+
+      <section id="experience">
+        <p class="section__text__p1">Veja Minha</p>
+        <h1 class="title">Experiência</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Desenvolvimento</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML/CSS</h3>
+                    <p>Básico</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>JavaScript<br />TypeScript</h3>
+                    <p>Médio</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                
+                  <div>
+                    <h3>JavaScript</h3>
+                    <p>Básico</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Linguagem C</h3>
+                    <p>Médio</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Linguagem Java</h3>
+                    <p>Básico</p>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="details-container">
+              <h2 class="experience-sub-title">Desenvolvimento</h2>
+              <div class="article-container">
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PostgreSQL</h3>
+                    <p>Básico</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Vue JS/ React JS</h3>
+                    <p>Médio</p>
+                  </div>
+                </article>
+                <article>
+                  <img
+                    src="./assets/checkmark.png"
+                    alt="Experience icon"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Assembly 16Bits</h3>
+                    <p>Médio</p>
+                  </div>
+                </article>
+                
+                <article>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Experience icon"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>PHP/ Laravel</h3>
+                      <p>Médio</p>
+                    </div>
+                </article>
+
+                <article>
+                    <img
+                        src="./assets/checkmark.png"
+                        alt="Experience icon"
+                        class="icon"
+                     />
+                    <div>
+                        <h3>GitHUB</h3>
+                        <p>Mediano</p>
+                    </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#projects'"
+        />
+      </section>
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!--
+   <header class="header">
         <nav class="header_menu">
             <a class="header_menu_link" href="index.html">Home</a>
             <a class="header_menu_link" href="about.html">Sobre mim</a>
@@ -36,5 +379,7 @@
     <footer class="rodape">
         <p>Desenvolvido pela Julia Duran.</p>
     </footer>
+-->
+    <script src="index.js"></script>
 </body>
 </html>
