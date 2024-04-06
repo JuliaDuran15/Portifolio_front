@@ -18,9 +18,32 @@ colorMode.addEventListener('change', () => {
   }
 });
 
+colorMode.addEventListener('touchstart', toggleColorMode);
+
+function toggleColorMode() {
+  if (body.classList.contains('dark-mode')) {
+    body.classList.remove('dark-mode');
+    body.classList.add('white-mode');
+    document.documentElement.style.setProperty('--text-color', '#343d48');
+    document.documentElement.style.setProperty('--cor-primaria', 'rgb(251, 247, 244)');
+    document.querySelector('.element-with-blur-effect').style.filter = 'none';
+  } else {
+    body.classList.remove('white-mode');
+    body.classList.add('dark-mode');
+    document.documentElement.style.setProperty('--text-color', '#ffffff');
+    document.documentElement.style.setProperty('--cor-primaria', '#222222');
+    document.querySelector('.element-with-blur-effect').style.filter = 'blur(4px)';
+  }
+}
+
+
+
 function toggleMenu() {
     const menu = document.querySelector(".menu-links");
     const icon = document.querySelector(".ham-icon");
     menu.classList.toggle("open");
+    
     icon.classList.toggle("open");
   }
+
+  

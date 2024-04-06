@@ -18,7 +18,13 @@
     }
     #ham-nav {
       display: flex;
+    } 
+    .form-check-label{
+      color: var(--text-color);
+      font-size: 1.5rem;
     }
+
+    
     #experience,
     .experience-details-container {
       margin-top: 2rem;
@@ -45,4 +51,6 @@
     .about-containers {
       margin-top: 0;
     }
+
+
   }
