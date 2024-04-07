@@ -1,6 +1,6 @@
  @media screen and (max-width: 1400px) {
     #profile {
-      height: 83vh;
+      height: 76vh;
       margin-bottom: 6rem;
     }
     .about-containers {
@@ -47,6 +47,7 @@
       width: 275px;
       height: 275px;
       margin: 0 auto 2rem;
+
     }
     .about-containers {
       margin-top: 0;
@@ -56,7 +57,7 @@
   @media screen and (max-width: 600px) {
     #contact,
     footer {
-      height: 40vh;
+      height: 29vh;
     }
     #profile {
       height: 83vh;
@@ -94,8 +95,12 @@
     }
     .section__pic-container {
       width: auto;
-      height: 46vw;
+      height: 50vh;
       justify-content: center;
+      overflow:hidden;
+      border-radius: 0%;
+
+      
     }
     .section__text__p2 {
       font-size: 1.25rem;

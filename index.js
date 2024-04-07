@@ -24,7 +24,7 @@ function toggleColorMode() {
   if (body.classList.contains('dark-mode')) {
     body.classList.remove('dark-mode');
     body.classList.add('white-mode');
-    document.documentElement.style.setProperty('--text-color', '#343d48');
+    document.documentElement.style.setProperty('--text-color', 'rgb(10, 10, 10)');
     document.documentElement.style.setProperty('--cor-primaria', 'rgb(251, 247, 244)');
     document.querySelector('.element-with-blur-effect').style.filter = 'none';
   } else {
