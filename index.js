@@ -7,7 +7,7 @@ colorMode.addEventListener('change', () => {
     body.classList.remove('dark-mode');
     body.classList.add('white-mode');
     document.documentElement.style.setProperty('--text-color', '#343d48'); // Define a cor do texto para o modo claro
-    document.documentElement.style.setProperty('--cor-primaria', 'rgb(251, 247, 244)'); // Define a cor do light-tertiary-color para o modo claro
+    document.documentElement.style.setProperty('--cor-primaria', '#faeddf'); // Define a cor do light-tertiary-color para o modo claro
     document.querySelector('.element-with-blur-effect').style.filter = 'none'; // Remova o efeito de desfoque no elemento específico
   } else {
     body.classList.remove('white-mode');
